@@ -258,5 +258,102 @@ a {
   }
 }
 /* navbar responsive end */
+/* banner responsive start */
+/* small device */
+@media (max-width: 576px) {
+   #banner {
+    background-position: center 90px, center center; 
+    background-size: 250px auto, cover; 
+    padding: 1px 0;
+    width: 100%;
+    position: relative;
+}
+#banner .banner-items{
+    text-align: center;
+    margin-top: 391px;
+}
+#banner .banner-items .new p{
+   background-color: #00FF88;
+   color: #1A0B2E;
+   top: 18%;
+   left: 61%;
+   font-size: 16px;
+   font-weight: 600;
+   width: 70px;
+   height: 35px;
+}
+#banner .banner-items .mic-logo img{
+    position: absolute;
+    top: 28%;
+    left: 43%;
+    height: 119px;
+    width: 80px;
+}
+.banner-items h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--heading-color);
+}
+}
 
+/* Medium device */
+@media (min-width: 577px) and (max-width: 992px) {
+#banner {
+    background-image: url('../assets/hero-circle.png'), url('../assets/hero-bg.png');
+    background-position: center 140px, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 250px auto, 1200px;
+    padding: 53px 0;
+    background-color: #1A0B2E;
+    width: 100%;
+    position: relative;
+}
+
+#banner .banner-items .new p{
+   top: 23%;
+   left: 60%;
+}
+#banner .banner-items .mic-logo img{
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    height: 115px;
+    width: 80px;
+}
+.banner-items h1 {
+    font-size: 40px;
+}
+}
+/* banner responsive end */
+/* /*extra large device */ 
+@media (min-width: 993px) and (max-width: 1200px) {
+#banner {
+    background-image: url('../assets/hero-circle.png'), url('../assets/hero-bg.png');
+    background-position: center 181px, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 266px auto, 1069px;
+    padding: 100px 0;
+    background-color: #1A0B2E;
+    width: 100%;
+    position: relative;
+}
+#banner .banner-items .new p {
+    background-color: #00FF88;
+    color: #1A0B2E;
+    top: 25%;
+    left: 56%;
+    font-size: 16px;
+    font-weight: 600;
+    width: 70px;
+    height: 35px;
+}
+
+#banner .banner-items .mic-logo img {
+    position: absolute;
+    top: 31%;
+    left: 46%;
+    height: 140px;
+    width: 80px;
+}
+}
 /* responsive part end */
