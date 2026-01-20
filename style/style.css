@@ -548,7 +548,7 @@ a {
 #footer .footer-items .icons{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   gap: 40px;
+   gap: 10px;
 }
 #footer .footer-items .icons span{
    display: flex;
@@ -962,7 +962,9 @@ a {
     text-align: center;
 }
 #host .host-items .host-card{
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   gap: 24px;
      background-color: #351165;
      border-radius: 40px;
