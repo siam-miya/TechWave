@@ -485,10 +485,8 @@ a {
   padding-bottom: 120px;
   background-color: #1A0B2E;
 }
-#host .host-items {
-    
-}
-#host .host-items .host-card{
+
+#host  .host-card{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -535,21 +533,21 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: #1A0B2E;
   
 }
 #footer .footer-items{
    text-align: center;
-   padding-top: 120px;
-  padding-bottom: 120px;
+   padding-top: 50px;
+  padding-bottom: 50px;
 }
 #footer .footer-items .logo img{
-   width: 410px;
-   height: 60px;
+   width: 219px;
+   height: 32px;
 }
 #footer .footer-items .icons{
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
    gap: 40px;
 }
 #footer .footer-items .icons span{
@@ -957,11 +955,11 @@ a {
 /* featured end */
 /* host start */
 #host {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background-color: #1A0B2E;
 }
 #host .host-items {
-    
+    text-align: center;
 }
 #host .host-items .host-card{
     flex-direction: column;
@@ -984,9 +982,7 @@ a {
   align-items: center;
   justify-content: start;
   gap: 8px;
- display: flex;
-  align-items: center;
-  justify-content: center;
+ 
 }
 #host .host-items .host-card .social img{
   padding: 10px; 
@@ -1010,4 +1006,45 @@ a {
     text-align: center;
 }
 /* host end */
+/* footer start */
+@media (max-width: 576px) {
+  #footer {
+  background-image: url('./../assets/footer-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1A0B2E;
+  
+}
+#footer .footer-items{
+   text-align: center;
+   padding-top: 10px;
+  padding-bottom: 10px;
+}
+#footer .footer-items .logo img{
+   width: 219px;
+   height: 32px;
+}
+#footer .footer-items .icons{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+#footer .footer-items .icons span{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+   /* padding-top: 32px;
+   padding-bottom: 32px; */
+   color: var(--paragraph-color);
+   font-size: 16px;
+}
+#footer .footer-items p{
+   color: rgba(255, 255, 255, 0.374);
+   font-size: 16px;
+   line-height: 24px;
+}
+}
+/* footer end*/
 /* responsive part end */
